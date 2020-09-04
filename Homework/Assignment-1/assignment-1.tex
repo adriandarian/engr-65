@@ -50,17 +50,31 @@
 		      \end{tabular}
 		\item[b)] Find the charge that has accumulated at $t = \SI{1}{\ms}$. \\
 		      \begin{tabular}{r c l}
-		      	$q(t)$ & $=$ &   
+		      	$q(1\times10^{-3})$ & $=$ & $0.16[1-(500(1\times10^{-3}) + 1)e^{-500(1\times10^{-3})}]$ \\
+		      	                    & $=$ & $0.16[1 - 0.9098]$                                          \\
+		      	                    & $=$ & $\SI{0.014432}{\milli\coulomb}$                             \\  
+		      	                    & $=$ & $\SI{14.432}{\micro\coulomb}$                               \\
 		      \end{tabular}
 	\end{itemize}
-	\item[12] When a car has a dead battery, it can often be started by connecting the battery from another car across its terminals. The positive terminals are connected together as are the negative terminals. The connection is illustrated in Fig. P1.12. Assume the current $i$ in Fig. P1.12 is measured and found to be $40$ \si{\ampere}.\\
+	\item[12] When a car has a dead battery, it can often be started by connecting the battery from another car across its terminals. The positive terminals are connected together as are the negative terminals. The connection is illustrated in the figure below. Assume the current $i$ in the figure below is measured and found to be $\SI{40}{\ampere}$. \\
 	      \hbox to 2cm{} \\
 	      \includegraphics{P1-12.png} \\
 	      \begin{itemize}
-	      	\item[a)] Which car has the dead battery?
-	      	\item[b)] If this connection is maintained for $1.5 \si{\min}$, how much energy is transferred to the dead battery? 
+	      	\item[a)] Which car has the dead battery? \\
+	      	      \begin{tabular}{r c l}
+	      	      	$P$ & $=$ & $(\SI{12}{\volt})(\SI{40}{\ampere})$ \\
+	      	      	    & $=$ & $\SI{480}{\watt}$                    \\
+	      	      	    &     & The dead battery is in Car A         \\
+	      	      \end{tabular} 
+	      	\item[b)] If this connection is maintained for $\SI{1.5}{\min}$, how much energy is transferred to the dead battery? \\
+	      	      \begin{tabular}{r c l}
+	      	      	$W(t)$ & $=$ & $\int_{0}^{t} Pdt$                                 \\
+	      	      	       & $=$ & $\int_{0}^{\SI{1.5}{\min}} \SI{480}{\watt}dt$      \\
+	      	      	       & $=$ & $(\SI{480}{\watt})\times[t]|_{0}^{\SI{1.5}{\min}}$ \\
+	      	      	       & $=$ & $\SI{28,800}{\joule}$                              \\
+	      	      \end{tabular}
 	      \end{itemize}
-	\item[18] The voltage and current at the terminals of the circuit element if Fig 1.5 are zero for $t < 0$. For $t \geq 0$ they are \\
+	\item[18] The voltage and current at the terminals of the circuit element are zero for $t < 0$. For $t \geq 0$ they are \\
 	      \hbox to 2cm{}
 	      \tab\begin{tabular}{l}
 	      $v = 75 - 75e^{-1000t}\si{\volt}$ \\
@@ -68,24 +82,22 @@
 	\end{tabular}
 	\begin{itemize}
 		\item[a)] Find the maximum value of the power delivered to the circuit. \\
-		      \begin{tabular}{l c c}
-		      	$p(t)$ & $=$ & $vi$ \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
+		      \begin{tabular}{r c l}
+		      	$p(t)$                & $=$ & $vi$                                                                                                    \\
+		      	                      & $=$ & $(75 - 75e^{-1000t})(50e^{-1000t})(10^{-3})$                                                            \\
+		      	                      & $=$ & $50\times\frac{1}{10^3}\times\frac{1}{e^{1000t}}(-75e^{-1000t} + 75)$                                   \\
+		      	$p(625\times10^{-6})$ & $=$ & $50\times\frac{1}{10^3}\times\frac{1}{e^{1000(625\times10^{-6})}}(-75e^{-1000(625\times10^{-6})} + 75)$ \\
+		      	                      & $=$ & $50\times\frac{1}{10^3}\times\frac{1}{e^{\frac{5}{8}}}(-\frac{75}{e^{\frac{5}{8}}} + 75)$               \\
+		      	                      & $=$ & $\frac{15(e^{\frac{5}{8}} - 1)}{4e^{\frac{5}{4}}}$                                                      \\
+		      	                      & $=$ & $\SI{93.283}{\milli\watt}$                                                                              \\
 		      \end{tabular}
 		\item[b)] Find the total energy delivered to the element. \\
-		      \begin{tabular}{l c c}
-		      	$p(t)$ & $=$ & $vi$ \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
-		      	       & $=$ &      \\
+		      \begin{tabular}{r c l}
+		      	$w_{total}(t)$ & $=$ & $\int_{0}^{\infty} p(t)dt$                                                                  \\
+		      	               & $=$ & $\int_{0}^{\infty} (50\times\frac{1}{10^3}\times\frac{1}{e^{1000t}}(-75e^{-1000t} + 75))dt$ \\
+		      	               & $=$ & $-\frac{3}{1600}(-e^{-2000t} + 2e^{-1000t})|_{0}^{\infty}$                                  \\
+		      	               & $=$ & $\frac{3}{1600}$                                                                            \\
+		      	               & $=$ & $\SI{1875}{\micro\joule}$                                                                   \\
 		      \end{tabular} 
 	\end{itemize}
 	\item[27] The voltage and the current at the terminals of an automobile battery during a charge cycle are shown in Fig.P1.27.
@@ -115,9 +127,8 @@
 	      	      \end{tabular} 
 	      \end{itemize}
 	      % \begin{tikzpicture}[domain=0:20]
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      % \end{tikzpicture}
-	\item[33] Assume you are an engineer in charge of a project and one of your subordinate engineers reports that the interconnection in Fig.P1.33 does not pass the power check. The data for the interconnection are given in Table P1.33. \\
+	\item[33] Assume you are an engineer in charge of a project and one of your subordinate engineers reports that the interconnection in the figure below does not pass the power check. The data for the interconnection are given in the table below. \\
 	      \includegraphics{P1-33.png} \\
 	      \begin{tabular}{l c c c}
 	      	Element & Voltage (\si{\volt}) & Current (\si{\ampere}) & Power ($\si{\volt}\times\si{\ampere} = \si{\watt}$) \\
@@ -137,7 +148,7 @@
 	      	\item[b)] If the subordinate is correct, can you find the error in the data?  \\
 	      	      Elements c, d, and g supply extra power. To fix we just reduce the power to match the required load of the system.
 	      \end{itemize} 
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 \end{itemize}
 
   
