@@ -71,7 +71,7 @@
 	      	      	$W(t)$ & $=$ & $\int_{0}^{t} Pdt$                                 \\
 	      	      	       & $=$ & $\int_{0}^{\SI{1.5}{\min}} \SI{480}{\watt}dt$      \\
 	      	      	       & $=$ & $(\SI{480}{\watt})\times[t]|_{0}^{\SI{1.5}{\min}}$ \\
-	      	      	       & $=$ & $\SI{28,800}{\joule}$                              \\
+	      	      	       & $=$ & $\SI{43.2}{\kilo\joule}$                           \\
 	      	      \end{tabular}
 	      \end{itemize}
 	\item[18] The voltage and current at the terminals of the circuit element are zero for $t < 0$. For $t \geq 0$ they are \\
@@ -89,7 +89,7 @@
 		      	$p(625\times10^{-6})$ & $=$ & $50\times\frac{1}{10^3}\times\frac{1}{e^{1000(625\times10^{-6})}}(-75e^{-1000(625\times10^{-6})} + 75)$ \\
 		      	                      & $=$ & $50\times\frac{1}{10^3}\times\frac{1}{e^{\frac{5}{8}}}(-\frac{75}{e^{\frac{5}{8}}} + 75)$               \\
 		      	                      & $=$ & $\frac{15(e^{\frac{5}{8}} - 1)}{4e^{\frac{5}{4}}}$                                                      \\
-		      	                      & $=$ & $\SI{93.283}{\milli\watt}$                                                                              \\
+		      	                      & $=$ & $\SI{933}{\milli\watt}$                                                                                 \\
 		      \end{tabular}
 		\item[b)] Find the total energy delivered to the element. \\
 		      \begin{tabular}{r c l}
@@ -100,7 +100,9 @@
 		      	               & $=$ & $\SI{1875}{\micro\joule}$                                                                   \\
 		      \end{tabular} 
 	\end{itemize}
-	\item[27] The voltage and the current at the terminals of an automobile battery during a charge cycle are shown in Fig.P1.27.
+	\item[27] The voltage and the current at the terminals of an automobile battery during a charge cycle are shown in the figure below. \\
+	      \hbox to 2cm{} \\	  
+	      \includegraphics{P1-27.png} \\  
 	      \begin{itemize}
 	      	\item[a)] Calculate the total charge transferred to the battery. \\
 	      	      \begin{tabular}{r c l}
@@ -126,8 +128,6 @@
 	      	      	$W_{T}$                                     & $=$ & $2256 + 362.667 = \SI{2618.667}{\kilo\joule}$                               \\
 	      	      \end{tabular} 
 	      \end{itemize}
-	      % \begin{tikzpicture}[domain=0:20]
-	      % \end{tikzpicture}
 	\item[33] Assume you are an engineer in charge of a project and one of your subordinate engineers reports that the interconnection in the figure below does not pass the power check. The data for the interconnection are given in the table below. \\
 	      \includegraphics{P1-33.png} \\
 	      \begin{tabular}{l c c c}
@@ -140,16 +140,13 @@
 	      	f       & 300                  & 60.0                   & 18000                                               \\
 	      	g       & 585                  & 82.5                   & -48262.5                                            \\
 	      	h       & -165                 & 82.5                   & 13612.5                                             \\
-	      	Total   & 1590                 & 97.5                   & -3600                                               
+	      	Total   & 1590                 & 97.5                   & -36000                                              
 	      \end{tabular}	  
 	      \begin{itemize}
 	      	\item[a)] Is the subordinate correct? Explain your answer. \\
-	      	      The subordinate is correct, due the net power being $\SI{-3600}{\watt}s$ and interconnection must consume power for each atom.
+	      	      The subordinate is correct, due the net power being $\SI{-36000}{\watt}s$ and interconnection must consume power for each atom.
 	      	\item[b)] If the subordinate is correct, can you find the error in the data?  \\
 	      	      Elements c, d, and g supply extra power. To fix we just reduce the power to match the required load of the system.
-	      \end{itemize} 
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      \end{itemize}    	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 \end{itemize}
-
-  
 \end{document}
