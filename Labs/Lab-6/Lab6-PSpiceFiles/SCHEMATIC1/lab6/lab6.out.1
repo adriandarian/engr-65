@@ -1,0 +1,87 @@
+
+**** 11/04/20 22:25:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\adarian\Documents\ucmerced-coursework\engr-65\Labs\Lab-6\Lab6-PSpiceFiles\SCHEMATIC1\lab6.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab6.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 5us 
+.OPTIONS ADVCONV
+.PROBE64 N([N14434])
+.PROBE64 N([N14438])
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB6
+R_R1         N14434 N14438  50 TC=0,0 
+C_C1         0 N14438  1u  TC=0,0 
+V_V2         N14434 0  
++SIN 0 10 100 0 0 0
+
+**** RESUMING lab6.cir ****
+.END
+
+**** 11/04/20 22:25:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\adarian\Documents\ucmerced-coursework\engr-65\Labs\Lab-6\Lab6-PSpiceFiles\SCHEMATIC1\lab6.
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14434)    0.0000 (N14438)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/04/20 22:25:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\adarian\Documents\ucmerced-coursework\engr-65\Labs\Lab-6\Lab6-PSpiceFiles\SCHEMATIC1\lab6.
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
